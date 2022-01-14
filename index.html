@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8' />
+    <title>Joseph Calise | Developer</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
+    <script src="index.js" defer></script>
+</head>
+<body onload="loadAnimations()">
+    <header>
+        <nav id="nav-bar">
+            <div class="logo">
+                <h1 class="logo-text"><a onClick="window.location.reload();">Joseph Calise</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#work-experience">Work Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="intro-section">
+        <div id="hello-div">
+            <h2 id="hello-intro">Hello!</h2>
+            <h2 id="name-intro">I am <span id="name-span">Joseph Calise</span></h2>
+        </div>
+        <p id="description-intro">I am a self-taught developer currently pursing a BS in Computer Science at Chapman University.</p>
+        <p id="quote-intro">"Programming isn't about what you know; it's about what you can figure out." <sub>-Chris Pine (Not the actor)</sub></p>
+    </section>
+    <main id="main-page">
+        <div class="about-me" id="about-me">
+            <h2 class="title-text">About Me</h2>
+            <div class="about-me-container">
+                <img id="about-me-picture" src="assets/cg-picture.jpeg" alt="A photo of myself">
+                <div id="about-me-text">
+                    <p class="about-me-text-1">My name is Joseph Calise and I am an aspiring Software Engineer. For the most part I am self-taught developer driven by
+                    curiosity and amazement of what can be accomplish by someone with an idea, a computer and the skill to code. In my
+                    personal life I enjoy being outdoors, watching T.V and spending time with my wife and friends. I served
+                    in the United States Coast Guard from 2016 to 2020 and ended my enlistment as a Boatswain’s Mate Second Class.</p>
+
+                    <p class="about-me-text-2">Generally, Boatswain’s Mates will go on to be boat captains, cops or merchant mariners. But at the end of my enlistment,
+                    I knew none of those were for me. I knew I wanted to be in technology, but I didn’t know in what capacity. My start in
+                    technology was in IT with GreenCoast Hydroponics, while working there I was able to obtain my CompTIA Network+ and
+                    CompTIA Security+ within less than a year of each other. From there I worked with our development team and knew that was
+                    the path for me. Since my departure from GreenCoast I have made strides to accomplishing my goals and becoming a
+                    Software Engineer. In this time, I have taught myself HTML, CSS and JavaScript as well as on track to graduate in 2023
+                    with a BS in Computer Science from Chapman University in Orange, CA. I look forward to continuing to pursue my passion
+                    in this field and hope to grow into a seasoned Software Developer.
+                    </p>
+                    <p class="about-me-text-3">Since beginning my journey into coding and software engineering, it is incomprehensible to put into words what you can
+                    do with code. Since brushing the surface, there is nothing professionally I want to be doing than this. It is no secret
+                    that software engineering continues to be the future, but it is mind boggling to know that with the right knowledge and
+                    creativity, you can quite literally change the world all beginning with <strong>code</strong>.</p>
+                </div>    
+            </div>
+        </div>
+
+
+        <div class="work-experience" id="work-experience">
+            <h2 class="title-text">Work Experience</h2>
+            <!-- Button Toggle -->
+                <div class="btn-container">
+                    <button id="toggle-btn" onclick="toggleFun()">Click for Resume</button>
+                </div>
+
+                <div class="content-container">
+                    <div id='map' class="map-showing">
+                        <script src="map.js"></script>
+                    </div>
+                    <div id="xp-txt" class="xp-hidden">
+                        <!---->
+                    </div>
+                </div>
+
+        </div>
+
+        <div class="connect" id="contact">
+            <h2 class="title-text">Lets Connect!</h2>
+            <div id="social-media">
+                <a href="https://www.instagram.com/joeycalise/" target="_blank"><img alt="svgImg" src="assets/icons8-instagram-96.png"/></a>
+                <a href="https://www.linkedin.com/in/joseph-calise-641662189/" target="_blank"><img src="assets/icons8-linkedin-96.png"/></a>
+                <a href="https://github.com/jaaycali?tab=repositories" target="_blank"><img src="assets/icons8-github-96.png"/></a>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <div id="to-top">
+        <img src="https://img.icons8.com/ios-filled/50/000000/chevron-up.png"/>
+    </div>
+</body>
+</html>
