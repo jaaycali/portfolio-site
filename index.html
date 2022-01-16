@@ -3,6 +3,7 @@
 <head>
     <meta charset='utf-8' />
     <title>Joseph Calise | Developer</title>
+    <link rel="icon" type="image/x-icon" href="/assets/JCicon.png">
     <meta name='viewport' content='width=device-width, initial-scale=1' />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +18,7 @@
     <header>
         <nav id="nav-bar">
             <div class="logo">
-                <h1 class="logo-text"><a onClick="window.location.reload();">Joseph Calise</a></h1>
+                <h1 class="logo-text"><a onClick="window.location.reload();"><img src="/assets/JCicon.png"></a></h1>
             </div>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
@@ -86,18 +87,22 @@
         <div class="connect" id="contact">
             <h2 class="title-text">Lets Connect!</h2>
             <div id="social-media">
-                <a href="https://www.instagram.com/joeycalise/" target="_blank"><img alt="svgImg" src="assets/icons8-instagram-96.png"/></a>
-                <a href="https://www.linkedin.com/in/joseph-calise-641662189/" target="_blank"><img src="assets/icons8-linkedin-96.png"/></a>
-                <a href="https://github.com/jaaycali?tab=repositories" target="_blank"><img src="assets/icons8-github-96.png"/></a>
+                <a href="https://www.instagram.com/joeycalise/" target="_blank"><img alt="svgImg" id="insta-img"src="assets/icons8-instagram-96-black.png"/></a>
+                <a href="https://www.linkedin.com/in/joseph-calise-641662189/" target="_blank"><img id="linkedin-img" src="assets/icons8-linkedin-96-black.png"/></a>
+                <a href="https://github.com/jaaycali?tab=repositories" target="_blank"><img id="github-img" src="assets/icons8-github-96-black.png"/></a>
             </div>
         </div>
     </main>
 
 
 
-
-    <div id="to-top">
-        <img src="https://img.icons8.com/ios-filled/50/000000/chevron-up.png"/>
-    </div>
+    <div id="icon-div">
+        <div id="to-top" class="bottom-right-buttons">
+            <img src="/assets/up-arrow.png"/>
+        </div>
+        <div id="dark-mode">
+            <img id="dark-mode-icon" class="moon" src="/assets/moon-black.png"/>
+        </div>
+    </div>    
 </body>
 </html>

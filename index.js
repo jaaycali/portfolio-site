@@ -89,3 +89,36 @@ window.addEventListener("scroll", () => {
 toTopButton.addEventListener("click", () => {
   window.scrollTo(0,0)
 })
+
+
+// Start of Darkmode/functionality
+
+const darkModeButton = document.getElementById("dark-mode")
+const darkModeIcon = document.getElementById("dark-mode-icon")
+const instaImage = document.getElementById("insta-img")
+const linkedinImage = document.getElementById("linkedin-img")
+const githubImage = document.getElementById("github-img")
+
+function changeIcon() {
+  if (darkModeIcon.className === "moon"){
+    darkModeIcon.src = "/assets/sun-warm.png"
+    darkModeIcon.className = "sun"
+    document.body.style.backgroundColor = "var(--bg-color-inversed)"
+    document.body.style.color = "var(--clr-main-inversed)"
+    //changes images colors
+    instaImage.src = "assets/icons8-instagram-96-white.png"
+    linkedinImage.src = "assets/icons8-linkedin-96-white.png"
+    githubImage.src = "assets/icons8-github-96-white.png"
+  } else {
+    darkModeIcon.src = "/assets/moon-black.png"
+    darkModeIcon.className = "moon"
+    document.body.style.backgroundColor = "var(--bg-color)"
+    document.body.style.color = "var(--clr-main)"
+    //changes images color
+    instaImage.src = "assets/icons8-instagram-96-black.png"
+    linkedinImage.src = "assets/icons8-linkedin-96-black.png"
+    githubImage.src = "assets/icons8-github-96-black.png"
+  }
+}
+
+darkModeButton.addEventListener("click", changeIcon)
