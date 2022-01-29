@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joseph Calise | Developer</title>
     <link rel="icon" type="image/x-icon" href="/assets/JCicon.png">
     <meta name='viewport' content='width=device-width, initial-scale=1' />
@@ -65,20 +66,41 @@
             </div>
         </div>
 
+        
 
         <div class="work-experience" id="work-experience">
             <h2 class="title-text">Work Experience</h2>
             <!-- Button Toggle -->
                 <div class="btn-container">
-                    <button id="toggle-btn" onclick="toggleFun()">Click for Resume</button>
+                    <button id="toggle-btn" onclick="toggleFun()">Interactive Map</button>
                 </div>
 
                 <div class="content-container">
-                    <div id='map' class="map-showing">
+                    <div id='map' class="map-hidden">
                         <script src="map.js"></script>
                     </div>
-                    <div id="xp-txt" class="xp-hidden">
-                        <!---->
+                    <div id="xp-txt" class="xp-showing">
+                        <div class="button-container">
+                            <button id="coast-guard-button" class="job-selector glowing">United States Coast Guard</button>
+                            <button id="green-coast-button" class="job-selector">GreenCoast Hydroponics</button>
+                            <button id="disney-button" class="job-selector">The Walt Disney Company</button>
+                        </div>
+                        <div class="text-container">
+                            <h3 id="job">United States Coast Guard</h3>
+                            <h4 id="title">Boatswain’s Mate 2nd Class (E-5)</h4>
+                            <h4 id="date">April 2016 - April 2020</h4>
+                            <hr id="hr-line">
+                            <div class="job-description-container">
+                                <div class="job-description-text">
+                                    <h5 class="positions" id="position-1">Coxswain</h5>
+                                    <p id="paragraph-1">In the United States Coast Guard, the coxswain is the person in charge of a small boat and its crew. The coxswain has the authority to direct all boat and crew activities during the mission and can modify planned missions to provide for the safety of the boat and the crew. At station Chatham, I earned the privilege of being a certified coxswain on the multiple boat types which were valued up to a million dollars. <strong>I accumulated more than 200 underway hours as a coxswain and completed a multitude of missions including, training unit personnel underway, assisting distressed boaters, and medical emergencies. </strong></p>
+                                    <h5 class="positions" id="position-2">Boarding Officer</h5>
+                                    <p id="paragraph-2">Coast Guard Boarding Officers are responsible for leading, directing and training Maritime Law Enforcement Teams. To become a Boarding Officer, you must complete 6 weeks of law enforcement training at the Federal Law Enforcement Training Center (FLETC) in Charleston, South Carolina. During this training you are exposed to the authority and jurisdictions of Coast Guard law enforcement, local and international maritime laws and statutes, as well as critical stress management and decision making in deadly force situations. <strong>As a Boarding Officer I lead law enforcement teams in over 50 recreational boating safety boardings and more than 35 Maritime Security and Response Operations.</strong></p>
+                                    <h5 class="positions" id="position-3">Officer of the Day</h5>
+                                    <p id="paragraph-3">The Officer of the Day (OOD) is responsible for supervising, planning, and executing the daily activities at the unit. The OOD must have critical thinking and extensive knowledge of each mission the unit preforms. During the duty period, which ranges from 48 to 72 hours, the OOD must maintain the unit’s readiness to respond to a multitude of missions during <strong>all</strong> hours of that duty period. The OOD must also have fluid and effective planning to balance training personnel and maintaining unit readiness for missions. This includes maintaining proper boat crews and law enforcement teams that are ready to undertake and complete any mission that may come up. <strong>As the Officer of the Day, I planned and executed upwards of 50 law enforcement events, 7 search and rescue cases, and the training and certification of 10 junior personnel in a collection of qualifications. </strong></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -87,12 +109,15 @@
         <div class="connect" id="contact">
             <h2 class="title-text">Lets Connect!</h2>
             <div id="social-media">
-                <a href="https://www.instagram.com/joeycalise/" target="_blank"><img alt="svgImg" id="insta-img"src="assets/icons8-instagram-96-black.png"/></a>
-                <a href="https://www.linkedin.com/in/joseph-calise-641662189/" target="_blank"><img id="linkedin-img" src="assets/icons8-linkedin-96-black.png"/></a>
-                <a href="https://github.com/jaaycali?tab=repositories" target="_blank"><img id="github-img" src="assets/icons8-github-96-black.png"/></a>
+                <a href="https://www.instagram.com/joeycalise/" target="_blank"><img alt="svgImg" id="insta-img"src="assets/icons8-instagram-96-white.png"/></a>
+                <a href="https://www.linkedin.com/in/joseph-calise-641662189/" target="_blank"><img id="linkedin-img" src="assets/icons8-linkedin-96-white.png"/></a>
+                <a href="https://github.com/jaaycali?tab=repositories" target="_blank"><img id="github-img" src="assets/icons8-github-96-white.png"/></a>
             </div>
         </div>
     </main>
+    <footer id="footer">
+        <p>This site was designed and built by ©Joseph Calise</p>
+    </footer>
 
 
 
@@ -101,7 +126,7 @@
             <img src="/assets/up-arrow.png"/>
         </div>
         <div id="dark-mode">
-            <img id="dark-mode-icon" class="moon" src="/assets/moon-black.png"/>
+            <img id="dark-mode-icon" class="sun" src="/assets/sun-warm.png"/>
         </div>
     </div>    
 </body>
