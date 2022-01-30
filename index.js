@@ -20,7 +20,6 @@ function showNav(){
 
 
 //On load function that selects each element with a time delay.
-
 const loadAnimations = () => {
   document.body.style.overflow = "hidden";
   setTimeout(() => {
@@ -39,7 +38,9 @@ const loadAnimations = () => {
   //this line prevents scrolling until the animation is completed.
   setTimeout(() => {
     document.body.style.overflow = "auto";
-    document.body.style.overflowX = "hidden"
+    document.body.style.overflowX = "hidden";
+    document.body.classList.remove("no-scroll")
+
   }, 7200)
 }
 
@@ -101,6 +102,8 @@ const githubImage = document.getElementById("github-img")
 const cgButton = document.getElementById("coast-guard-button")
 const gcButton = document.getElementById("green-coast-button")
 const disneyButton = document.getElementById("disney-button")
+const mobileDarkModeButton = document.getElementById("mobile-dark-mode-icon")
+const mobileDarkModeIcon = document.getElementById("mobile-dark-mode-icon")
 const jobsButtonArr = [cgButton, gcButton, disneyButton]
 
 
@@ -108,6 +111,8 @@ function changeIcon() {
   if (darkModeIcon.className === "sun"){
     darkModeIcon.src = "/assets/moon-black.png"
     darkModeIcon.className = "moon"
+    mobileDarkModeIcon.src = "/assets/moon-black.png"
+    mobileDarkModeIcon.className = "moon"
     document.body.style.backgroundColor = "var(--bg-color-inversed)"
     document.body.style.color = "var(--clr-main-inversed)"
     //changes images color
@@ -139,6 +144,8 @@ function changeIcon() {
   } else {
     darkModeIcon.src = "/assets/sun-warm.png"
     darkModeIcon.className = "sun"
+    mobileDarkModeIcon.src = "/assets/sun-warm.png"
+    mobileDarkModeIcon.className = "sun"
     document.body.style.backgroundColor = "var(--bg-color)"
     document.body.style.color = "var(--clr-main)"
     //changes images colors
@@ -171,6 +178,7 @@ function changeIcon() {
 }
 
 darkModeButton.addEventListener("click", changeIcon)
+mobileDarkModeButton.addEventListener("click", changeIcon)
 
 
 // End of Dark Mode 
@@ -269,3 +277,15 @@ function showDisney(){
 document.getElementById("coast-guard-button").addEventListener("click", showCoastGuard)
 document.getElementById("green-coast-button").addEventListener("click", showGreenCoast)
 document.getElementById("disney-button").addEventListener("click", showDisney)
+
+
+const mobileMenu = document.getElementById("mobile-nav")
+
+document.getElementById("hamburger").addEventListener("click", ()=>{
+  if (mobileMenu.classList.contains("mobile-hidden")) {
+    mobileMenu.classList.replace("mobile-hidden", "mobile-showing")
+    console.log("should be showing")
+  } else {
+    mobileMenu.classList.replace("mobile-showing", "mobile-hidden")
+  }
+})
