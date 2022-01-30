@@ -15,21 +15,35 @@
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
     <script src="index.js" defer></script>
 </head>
-<body onload="loadAnimations()">
+<body class="no-scroll" onload="loadAnimations()">
     <header>
         <nav id="nav-bar">
             <div class="logo">
                 <h1 class="logo-text"><a onClick="window.location.reload();"><img src="/assets/JCicon.png"></a></h1>
             </div>
-            <ul class="nav-links">
+            <img id="hamburger" src="https://img.icons8.com/external-victoruler-flat-gradient-victoruler/64/000000/external-hamburger-food-and-delivery-victoruler-flat-gradient-victoruler.png"/>
+            <ul class="nav-links"> 
                 <li><a href="#">Home</a></li>
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#work-experience">Work Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#">Resume</a></li>
             </ul>
-        </nav>
+            <!-- Mobile Nav -->
     </header>
+    <div id="mobile-nav" class="mobile-hidden">
+        <ul class="mobile-links"> 
+            <li><a href="#">Home</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#work-experience">Work Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Resume</a></li>
+        </ul>
+        <div id="mobile-dark-mode-button">
+            <img id="mobile-dark-mode-icon" class="sun" src="/assets/sun-warm.png"/>
+        </div>
+    </div>
+</nav>
     <section class="intro-section">
         <div id="hello-div">
             <h2 id="hello-intro">Hello!</h2>
